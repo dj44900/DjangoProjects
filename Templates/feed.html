@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for vid in vids %}
+   <div id="section">
+ <h31>{{ vid.name }}</h3>
+<iframe title="YouTube video player" class="youtube-player" type="text/html"
+width="256" height="256" src="http://www.youtube.com/embed/{{ vid.embedid }}"
+frameborder="0" allowFullScreen></iframe></div>
+{% endfor %}
+{% endblock %}

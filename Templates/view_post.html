@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+<div id="section">
+{% block head_title %}{{ post.title }}{% endblock %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block content %}
+    <h1>{{ post.title }}</h1>
+    {{ post.body }}
+{% endblock %}
+</div>
+<div id="footer">
+Copyright &copy 2014. Drew Graham
+</div>
